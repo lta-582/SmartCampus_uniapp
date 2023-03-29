@@ -1,0 +1,166 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+								"float": "left",
+								"fontSrc": "./static/top/search.ttf",
+								"text": "\ue607"
+							},
+							{
+								"float": "right",
+								"fontSrc": "./static/top/remind.ttf",
+								"text": "\ue600"
+							}
+						]
+					}
+				},
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/msg/msg",
+			"style": {
+				"navigationBarTitleText": "课程表"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/sche/sche",
+			"style": {
+				"navigationBarTitleText": "日程"
+			}
+		},
+		{
+			"path": "pages/social/social",
+			"style": {
+				"navigationBarTitleText": "社交",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/my/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/my/myDynamic",
+			"style": {
+				"navigationBarTitleText": "我的动态"
+			}
+		},
+		{
+			"path": "pages/my/editInfo",
+			"style": {
+				"navigationBarTitleText": "我的信息"
+			}
+		},
+		{
+			"path": "pages/else/addArticle",
+			"style": {
+				"navigationBarTitleText": "发布动态"
+			}
+		},
+		{
+			"path": "pages/else/addSchedule",
+			"style": {
+				"navigationBarTitleText": "新建日程"
+			}
+		},
+		{
+			"path": "pages/social/article_detail",
+			"style": {
+				"navigationBarTitleText": "动态评论"
+			}
+		},
+		{
+			"path": "pages/clazzinfo/allclazz",
+			"style": {
+				"navigationBarTitleText": "课程信息"
+			}
+		},
+		{
+			"path": "pages/clazzinfo/studentInfo",
+			"style": {
+				"navigationBarTitleText": "我的信息"
+			}
+		},
+		{
+			"path": "pages/clazzinfo/examInfo",
+			"style": {
+				"navigationBarTitleText": "考试信息"
+			}
+		},
+		{
+			"path": "pages/social/my_detail",
+			"style": {
+				"navigationBarTitleText": "我的动态"
+			}
+		}
+
+	],
+	"subPackages": [{
+		"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页1"
+			}
+		}, {
+			"path": "pages/studentInfo/studentInfo",
+			"style": {
+				"navigationBarTitleText": "个人信息",
+				"enablePullDownRefresh": false
+			}
+
+		}]
+	}],
+	"tabBar": {
+		"selectedColor": "#BA181B",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home-s.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/sche/sche",
+				"iconPath": "static/tabbar/calendar.png",
+				"selectedIconPath": "static/tabbar/calendar-s.png",
+				"text": "日程"
+			},
+			{
+				"pagePath": "pages/social/social",
+				"iconPath": "static/tabbar/social-s.png",
+				"selectedIconPath": "static/tabbar/social.png",
+				"text": "社交"
+			},
+			// {
+			// 	"pagePath": "pages/msg/msg",
+			// 	"iconPath": "static/tabbar/msg.png",
+			// 	"selectedIconPath": "static/tabbar/msg-s.png",
+			// 	"text": "消息"
+			// },
+			{
+				"pagePath": "pages/my/my",
+				"iconPath": "static/tabbar/my.png",
+				"selectedIconPath": "static/tabbar/my-s.png",
+				"text": "我的"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uView",
+		"navigationBarBackgroundColor": "#BA181B",
+		"backgroundColor": "#FFFFFF"
+	}
+}
